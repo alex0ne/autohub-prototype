@@ -2,5 +2,38 @@
 
 .App {
   font-family: sans-serif;
-  text-align: center;
+  font-size: 1.1rem;
+}
+
+.logo {
+  margin-right: 20px;
+  float: left;
+  cursor: pointer;
+  height: 64px;
+}
+
+.mobile-only {
+  display: none;
+}
+
+.help-card {
+  width: 33%;
+}
+
+@media screen and (max-width: 755px) {
+  .desktop-only {
+    display: none;
+  }
+  .ant-layout-header {
+    padding: 0 15px;
+  }
+  .mobile-only {
+    display: inline;
+  }
+  #help-section {
+    flex-direction: column;
+  }
+  .help-card {
+    width: 99%;
+  }
 }
